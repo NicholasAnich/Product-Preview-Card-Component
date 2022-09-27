@@ -1,0 +1,56 @@
+/* The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, Fraunces;
+  font-size: 14px;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+/* Typography */
+h1,
+strong {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+p {
+  color: hsl(288deg, 12%, 48%);
+}
+
+/* Buttons */
+/* .btn {
+  color: white;
+  display: block;
+  background-color: var(--primary-btn-color);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--secondary-btn-color);
+} */
+.content {
+  color: purple;
+}
+
+@media (min-width: 375px) {
+  .container {
+    padding: 5rem;
+  }
+}
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+/*# sourceMappingURL=output.css.map */
