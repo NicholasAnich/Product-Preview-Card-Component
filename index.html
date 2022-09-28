@@ -21,12 +21,15 @@
     <body>
         <main class="main">
             <div class="main-wrapper">
-                <section class="container">
-                    <img
-                        class="main-image"
-                        src="./images/image-product-desktop.jpg"
-                        alt="A bottle of Gabrielle Essence Eau De Parfum lying on a white table next to two branches with dark green leaves"
-                    />
+                <section class="container image-wrapper">
+                    <picture>
+                        <source media="(min-width:769px") src="/images/image-product-mobile">
+                        <img
+                            class="main-image"
+                            src="./images/image-product-mobile.jpg"
+                            alt="A bottle of Gabrielle Essence Eau De Parfum lying on a white table next to two branches with dark green leaves"
+                        />
+                    </picture>
                 </section>
 
                 <section class="container content-wrapper">
@@ -46,10 +49,8 @@
                         </div>
                         <div class="cart">
                             <a href="#" class="btn">
-                                <img
-                                    src="./images/icon-cart.svg"
-                                    alt="cart-icon"
-                                />
+                                <img src="./images/icon-cart.svg" alt="cart icon">
+                                <span class="cart-icon"></span>
                                 Add to Cart</a
                             >
                         </div>
