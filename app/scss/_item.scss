@@ -1,0 +1,11 @@
+.item {
+    background-color: $pureWhite;
+    max-width: 343px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        // flex-grow: 1;
+        padding: 1.5em;
+    }
+}

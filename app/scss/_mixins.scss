@@ -1,9 +1,9 @@
 //Breakpoints
 
 $breakpoint-up: (
-    "med": "40em",
+    "medium": "40em",
     "large": "64em",
-    "xlg": "87.5em",
+    "xlarge": "87.5em",
 );
 
 $breakpoints-down: (
@@ -11,7 +11,6 @@ $breakpoints-down: (
     "medium": "63.9375em",
     "large": "87.4375em",
 );
-//77% for product card
 
 @mixin breakpoint-up($size) {
     @media (min-width: map-get($breakpoint-up, $size)) {
