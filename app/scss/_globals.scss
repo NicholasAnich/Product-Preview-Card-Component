@@ -32,7 +32,7 @@ img {
 
 // Buttons and Anchor tags
 .btn {
-    border: 1px solid black;
+    // border: 1px solid black;
     padding: 1em 2em;
     // margin: 0 1em;
     border-radius: 8px;
@@ -40,6 +40,10 @@ img {
 
 a {
     text-decoration: none;
+}
+
+a:focus {
+    background-color: $deepAquamarine-dark;
 }
 
 // /* Typography */
@@ -64,13 +68,17 @@ main {
     display: flex;
     align-items: center;
     height: 100vh;
+    // padding: 1em;
 }
 
 .container {
     // border: 1px solid magenta;
     width: 90%;
-    max-width: 37.5rem;
+    // max-width: 28.125rem;
+    max-width: 460px;
+
     margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     &__flex {
         // border: 3px solid orange;
@@ -81,6 +89,8 @@ main {
 
     @include breakpoint-up(medium) {
         flex-direction: row;
+        max-width: 37.5rem;
+        max-height: 450px;
     }
 }
 
