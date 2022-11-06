@@ -27,9 +27,17 @@ Users should be able to:
 
 ### Screenshots
 
+Dekstop View
+
 ![dekstop view](./images/readme-desktop-nohover.png)
-![mobile view](./images/readme-mobile-view.png)
+
+Desktop Hover/Focus States
+
 ![desktop hover view](./images/readme-desktop-hover.png)
+
+Mobile View
+
+![mobile view](./images/readme-mobile-view.png)
 
 ### Links
 
@@ -47,7 +55,7 @@ Users should be able to:
 
 ### What I learned
 
-I learnt about the picture html tag where you can provide mulitple source elements with images. The broswer will look at each source element and choose the best suited image, usually by the media attribute where you can specify a breakpoint.
+I learnt about the `<Picture>` html tag where you can provide mulitple source elements with images. The broswer will look at each source element and choose the best suited image, usually by the media attribute where you can specify a breakpoint.
 
 ```html
 <section class="pictures">
