@@ -6,8 +6,8 @@
         <link
             rel="icon"
             type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
+            sizes="40x40"
+            href="./images/icons8-source-code-40.png"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,19 +16,19 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/dist/style.css" />
-        <title>Frontend Mentor | Product preview card component</title>
+        <title>Product preview card component</title>
     </head>
     <body>
         <main class="main">
-            <div class="container container__flex card">
+            <div class="container container__flex card" tabindex="1">
                 <section class="pictures">
                     <picture class="pictures__img">
                         <source
                             srcset="./images/image-product-desktop.jpg"
                             media="(min-width:41.875em)"
+                            alt="A bottle of Gabrielle Essence Eau De Parfum lying on a white table next to two branches with dark green leaves"
                         />
                         <img
-                            class="image__full"
                             src="./images/image-product-mobile.jpg"
                             alt="A bottle of Gabrielle Essence Eau De Parfum lying on a white table next to two branches with dark green leaves"
                         />
@@ -36,20 +36,27 @@
                 </section>
 
                 <section class="content">
-                    <span class="content__type"> PERFUME </span>
-                    <h1>Gabrielle Essence Eau De Parfum</h1>
-                    <p class="content__body">
+                    <span class="content__type" tabindex="2"> PERFUME </span>
+                    <h1 tabindex="3">Gabrielle Essence Eau De Parfum</h1>
+                    <p class="content__body" tabindex="4">
                         A floral, solar and voluptuous interpretation composed
                         by Olivier Polge, Perfumer-Creator for the House of
                         CHANEL.
                     </p>
                     <div class="content__pricing">
-                        <span class="pricing__now"
+                        <span class="pricing__now" tabindex="5"
                             ><strong>$149.99</strong></span
                         >
-                        <span class="pricing__before"> $169.99 </span>
+                        <span class="pricing__before" tabindex="6">
+                            $169.99
+                        </span>
                     </div>
-                    <div class="content__cta btn">
+                    <button
+                        role="button"
+                        id="button"
+                        class="content__cta btn"
+                        tabindex="7"
+                    >
                         <a href="#" class="cta__link">
                             <svg
                                 class="cart__icon"
@@ -65,8 +72,7 @@
                             </svg>
                         </a>
                         <span class="content__cta__text">Add to Cart</span>
-                    </div>
-                    <!-- </div> -->
+                    </button>
                 </section>
             </div>
         </main>
